@@ -12,9 +12,6 @@ except ImportError:
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
-
-with open('HISTORY.rst') as history_file:
-    history = history_file.read()
     
 dirname = os.path.dirname(__file__)
 
@@ -29,7 +26,7 @@ setup(
     name='openupgradelib',
     version=openupgradelib.__version__,
     description=openupgradelib.__doc__,
-    long_description=readme + '\n\n' + history,
+    long_description=readme,
     author=openupgradelib.__author__,
     author_email=openupgradelib.__email__,
     url='https://github.com/OCA/openupgradelib',
